@@ -1,0 +1,7 @@
+*.o
+*.bin
+./build/
+./dist/
+*.dll
+*.key
+*.temp
