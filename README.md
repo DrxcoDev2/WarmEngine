@@ -24,11 +24,6 @@
   </strong>
 </p>
 
-## 🌐 Language Composition
-- **C++**: 80.1%
-- **Makefile**: 10.4%
-- **C**: 9.5%
-
 ## 🖥️ Compatibility & Prerequisites
 
 - Works on **Linux** and **Windows**
