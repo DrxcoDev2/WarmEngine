@@ -8,6 +8,7 @@
 
 #define WIN_W_PRE 800
 #define WIN_H_PRE 600
+extern bool loopShouldStop = false; 
 
 using WARMWIN = SDL_Window;
 using RENDERER = SDL_Renderer;
@@ -89,9 +90,7 @@ RENDERER* CreateRenderer(WARMWIN* window, int index = -1) {
         return nullptr;
     }
 
-    return renderer;
 }
-
 
 
 
