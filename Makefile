@@ -11,6 +11,8 @@ SDL     = $(shell sdl2-config --cflags --libs)
 TARGET  = build/main
 SRC     = main.cpp $(CFG)config.cpp
 HEADERS = $(CFG)config.h warm.h
+UTIL_CALL = util/syscall.asm
+TARGET_UTIL = build/util/
 
 # === Default build ===
 all: $(TARGET)
@@ -20,6 +22,11 @@ $(TARGET): $(SRC) $(HEADERS)
 	@mkdir -p build
 	$(CC) $(CFLAGS) $(SRC) -o $(TARGET) $(INCLUDE) $(SDL)
 
+# === ASM UTIL COMPILE ===
+utilasm:
+	@mkdir -p build/util
+	@nasm -f elf $(UTIL_CALL) -o $(TARGET_UTIL)syscall.o
+	
 # === Clean compiled files ===
 clean:
 	rm -f $(TARGET)
