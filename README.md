@@ -29,6 +29,7 @@
 - Works on **Linux** and **Windows**
 - Requires [SDL2](https://www.libsdl.org/) development libraries
 - **C++ compiler** (GCC, MSVC, etc.)
+- **Assemby compiler (optional)** NASM
 - **Make** utility
 
 ## 🛠️ Build Instructions
@@ -43,5 +44,11 @@
     ```sh
     make
     ```
+
+## Util commands
+**Clean project**
+- ```sh
+  make clean
+  ```
 
 Have fun developing with Warm Engine! ✨
